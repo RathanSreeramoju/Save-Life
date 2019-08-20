@@ -1,10 +1,11 @@
 <?php
 $name = $_REQUEST['name'];
-$blood = $_REQUEST['blood'];
+$blood_group = $_REQUEST['blood_group'];
 $phone = $_REQUEST['phone'];
+$email = $_REQUEST['email'];
 $age = $_REQUEST['age'];
-$address = $_REQUEST['address'];
 $password = $_REQUEST['password'];
+$location = $_REQUEST['location'];
 
 
 
@@ -13,8 +14,8 @@ $password = $_REQUEST['password'];
 
 $con = mysqli_connect("localhost","root","","save_life");
 // Check connection
- $query = "INSERT into `donor_registration` (name, blood, phone, age, address, password)
-VALUES ('$name', '$blood', '$phone', '$age', '$address', '$password')";
+ $query = "INSERT into `donor_registration` (name, blood_group, phone, email, age, password, location)
+VALUES ('$name', '$blood_group', '$phone', '$email', '$age', '$password', '$location')";
 
 $result = mysqli_query($con,$query);
  
