@@ -1,14 +1,39 @@
-<!DOCTYPE html>
+<?php
+$name = $_REQUEST['name'];
+$blood = $_REQUEST['blood'];
+$phone = $_REQUEST['phone'];
+$age = $_REQUEST['age'];
+$address = $_REQUEST['address'];
+$password = $_REQUEST['password'];
 
-<html>
-    <head>
-        <?php
-            extract($_POST);
-            $conn = mysqli_connect("localhost", "root", "", "save_life");
-            $insert = "INSERT INTO donor_registration (name, blood, phone, email, age, address, password) VALUES ('".$name."','".$blood."','".$phone."','".$email."','".$age."','".$address."','".$password."')";
-            mysqli_query($conn, $insert);
-            header("location:Registration_Successful.html");
-        ?>
-    </head>
-    
-</html>
+
+
+
+
+
+$con = mysqli_connect("localhost","root","","save_life");
+// Check connection
+ $query = "INSERT into `donor_registration` (name, blood, phone, age, address, password)
+VALUES ('$name', '$blood', '$phone', '$age', '$address', '$password')";
+
+$result = mysqli_query($con,$query);
+ 
+        if($result)
+        {
+     
+          echo "success";
+          header("location:Registration_successful.html");
+
+
+         }
+         else 
+         {
+            echo "failed";
+            header("location:Registration_Unsuccessful.html");
+         }
+         
+
+
+
+
+?>

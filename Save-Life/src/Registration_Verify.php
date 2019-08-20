@@ -9,7 +9,7 @@
             $flag = 1;
             for ($i = 0; $i < mysqli_num_rows($res); $i++){
                 $row = mysqli_fetch_assoc($res);
-                if ($row['username'] == $username){
+                if ($row['name'] == $name){
                     $flag = 0;
                     break;
                 }
