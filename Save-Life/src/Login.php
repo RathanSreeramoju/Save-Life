@@ -64,4 +64,17 @@
         <center style = "color: black">Not a Member? <a href = "Register_Donor.html">Register</a> </center>
 		<center style = "color: black">Go to the <a href = "Home.html">home page.</a> </center>
 	</body>
+<body>
+        <div style = "color: #fd5a5a;">
+            <center><h1>Login</h1></center>
+        </div>
+        <form class = "form" action = "Login_Verify.php" method = "POST">
+            <input class = "input" style = "top:20%;"type = "text" name = "username" placeholder = "Username" required></input> </br>
+            <input class = "input" style = "top:27%;"type = "password" name = "password" placeholder = "Password" required></input> </br>
+			<input class = "submit" type = "submit" value = "Login"></input> </br>
+        </form>
+		</br>
+        <center style = "color: black">Not a Member? <a href = "Register_Donor.html">Register</a> </center>
+		<center style = "color: black">Go to the <a href = "Home.html">home page.</a> </center>
+	</body>
 </html>
