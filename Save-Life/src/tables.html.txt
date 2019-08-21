@@ -1,0 +1,65 @@
+!DOCTYPE html
+html
+head
+style
+table {
+  font-family arial, sans-serif;
+  border-collapse collapse;
+  width 100%;
+}
+
+td, th {
+  border 1px solid #dddddd;
+  text-align left;
+  padding 8px;
+}
+
+trnth-child(even) {
+  background-color #dddddd;
+}
+style
+head
+body
+
+h2HTML Tableh2
+
+table
+  tr
+    thCompanyth
+    thContactth
+    thCountryth
+  tr
+  tr
+    tdAlfreds Futterkistetd
+    tdMaria Anderstd
+    tdGermanytd
+  tr
+  tr
+    tdCentro comercial Moctezumatd
+    tdFrancisco Changtd
+    tdMexicotd
+  tr
+  tr
+    tdErnst Handeltd
+    tdRoland Mendeltd
+    tdAustriatd
+  tr
+  tr
+    tdIsland Tradingtd
+    tdHelen Bennetttd
+    tdUKtd
+  tr
+  tr
+    tdLaughing Bacchus Winecellarstd
+    tdYoshi Tannamuritd
+    tdCanadatd
+  tr
+  tr
+    tdMagazzini Alimentari Riunititd
+    tdGiovanni Rovellitd
+    tdItalytd
+  tr
+table
+
+body
+html
